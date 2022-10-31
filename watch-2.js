@@ -7,6 +7,13 @@ function time() {
 }
 
 function date() {
-    const d = new Date('31 Oct 2022');
-    document.getElementById('date').innerHTML = d.toDateString('th-TH');
+    const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const weakday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const info = new Date();
+    let wd = weakday[info.getDay()]
+    var d = info.getDate();
+    var m = month[info.getMonth()];
+    var y = info.getFullYear();
+    var merge = wd + " " + d + ' ' + m + " " + y;
+    document.getElementById('date').innerHTML = merge;
 }
