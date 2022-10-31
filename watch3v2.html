@@ -14,26 +14,26 @@
   <div class="overallarea">
     <div class="container">
       <div class="card">
-        <h2 class="bankname">Bank Name</h2>
+        <h2 class="bankname" id="cbname">Bank Name</h2>
         <h2 class="logo">Logo Here</h2>
         <img src="https://img.icons8.com/fluency/344/sim-card-chip.png" alt="" class="cardchip" />
         <div class="arrow"></div>
-        <div class="cardno">0123 2345 5678 9000</div>
+        <div class="cardno" id="ccnumber">0123 2345 5678 9000</div>
         <p class="cardvalid">
           <span class="valdate">
             Valid
             <br />
             Date
           </span>
-          <span class="expiredate">12/25</span>
+          <span class="expiredate" id="cmmyy">12/25</span>
         </p>
-        <div class="ownername">Owner Name</div>
+        <div class="ownername" id="cownername">Owner Name</div>
         <div class="logo1"></div>
         <div class="logo2"></div>
       </div>
       <div class="card">
         <div class="blackbar"></div>
-        <div class="whitebar">535</div>
+        <div class="whitebar" id="ccvc">53dddddd5</div>
         <div class="sticker">
           <hr />
           <hr />
@@ -61,23 +61,23 @@
     <div class="form-container">
       <div class="input-wrap">
         <label for="">Owner Name</label>
-        <input type="text" name="" id="ownername">
+        <input type="text" name="" id="ownername" oninput="ow()">
       </div>
       <div class="input-wrap">
         <label for="">Bank Name</label>
-        <input type="text" name="" id="bname">
+        <input type="text" name="" id="bname" oninput="bn()">
       </div>
       <div class="input-wrap">
         <label for="">Card Number</label>
-        <input type="text" name="" id="cnumber" maxlength="16">
+        <input type="text" name="" id="cnumber" maxlength="16" oninput="cn()">
       </div>
       <div class="input-wrap-half">
         <label for="">MM / YY</label>
-        <input type="text" name="" id="mmyy" maxlength="4">
+        <input type="text" name="" id="mmyy" maxlength="4" oninput="mm()">
       </div>
       <div class="input-wrap-half">
         <label>CVC Code</label>
-        <input type="text" name="" id="cvc" maxlength="3">
+        <input type="text" name="" id="cvc" maxlength="3" oninput="cvc()">
       </div>
       <button>Pay now</button>
     </div>

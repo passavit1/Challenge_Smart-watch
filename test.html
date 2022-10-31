@@ -9,26 +9,13 @@
 </head>
 
 <body>
-    <table id="outside">
-        <tr>
-            <td id="t1">one</td>
-        </tr>
-        <tr>
-            <td id="t2">three</td>
-        </tr>
-    </table>
-    <script>
-        // Function to change the content of t2
-        function modifyText() {
-            const t2 = document.getElementById("t2");
-            const isNodeThree = t2.firstChild.nodeValue === "two";
-            t2.firstChild.nodeValue = isNodeThree ? "four" : "five";
-        }
+    <input type="text" name="" id="name">
 
-        // Add event listener to table
-        const el = document.getElementById("outside");
-        el.addEventListener("click", modifyText, false);
-    </script>
+    <button onclick="show()">click</button>
+
+    <p id="show"></p>
+
+    <script src="/test.js"></script>
 </body>
 
 </html>

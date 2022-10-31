@@ -11,9 +11,9 @@ function date() {
     const weakday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const info = new Date();
     let wd = weakday[info.getDay()]
-    var d = info.getDate();
-    var m = month[info.getMonth()];
-    var y = info.getFullYear();
-    var merge = wd + " " + d + ' ' + m + " " + y;
+    let d = info.getDate();
+    let m = month[info.getMonth()];
+    let y = info.getFullYear();
+    let merge = wd + " " + d + ' ' + m + " " + y;
     document.getElementById('date').innerHTML = merge;
 }
