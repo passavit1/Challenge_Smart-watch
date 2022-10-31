@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart watch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+        .main-container {
+            padding: 24px;
+
+        }
+
+        .img-main {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        nav {
+            height: 80px;
+            background-color: rgb(234, 90, 61);
+
+        }
+
+
+
+
+        .color>button {
+            width: 50px;
+            height: 40px;
+        }
+
+        .color>button:nth-child(2) {
+            background-color: #ca3d22;
+            --bs-btn-active-bg: #ca3d22;
+            --bs-btn-active-border-color: #ca3d22;
+
+        }
+
+        .color>button:nth-child(3) {
+            background-color: #565681;
+            --bs-btn-active-bg: #565681;
+            --bs-btn-active-border-color: #565681;
+        }
+
+        .color>button:nth-child(4) {
+            background-color: #e9c7be;
+            --bs-btn-active-bg: #e9c7be;
+            --bs-btn-active-border-color: #e9c7be;
+        }
+
+        .action-btn>button {
+            height: 40px;
+            width: 150px;
+
+        }
+
+        .action-btn>button:first-child {
+            background-color: rgb(239, 239, 239);
+            --bs-btn-active-border-color: rgb(239, 239, 239);
+        }
+
+        .action-btn>button:last-child {
+            background-color: rgb(254, 69, 0);
+            --bs-btn-active-border-color: rgb(254, 69, 0);
+            --bs-btn-active-bg: rgb(254, 69, 0, 0.7);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar ">
+        <div class="container-fluid justify-content-center">
+            <span class="navbar-brand mb-0 h1 " style="color:white;font-size: 1.5rem;">Gunn watch shop</span>
+        </div>
+    </nav>
+    <div class="container-fluid main-container d-flex justify-content-center ">
+        <div>
+            <img src="https://github.com/passavit1/Challenge_Smart-watch/blob/main/purple-watch.png?raw=true"
+                class="img-fluid img-main" alt="..." id="watch-pic">
+        </div>
+        <div class="col-7 bg-body">
+            <h4 class=" mb-3 mt-3 fw-bold">WeStride-22 The Smartest Watch</h4>
+            <p style="opacity:0.7;">There is no one who loves pain itself, who seeks after it and wants
+                to have it, simply because it is pain...</p>
+            <h5 class="fw-bold">Select Color</h5>
+            <div class='color my-3'>
+                <button type="button" class="btn btn-dark me-1 my-1" id="btb"></button>
+                <button type="button" class="btn me-1" id="bto"></button>
+                <button type="button" class="btn me-1" id="btp"></button>
+                <button type="button" class="btn me-1" id="btc"></button>
+            </div>
+            <div class="action-btn my-3">
+                <button type="button" class="btn" id="ATC">ADD TO CART</button>
+                <button type="button" class="btn text-light" id="reset">BUY</button>
+            </div>
+        </div>
+
+
+
+        <script src="/watch-1.js"></script>
+</body>
+
+
+</html>

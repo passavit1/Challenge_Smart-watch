@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        body>div:first-child {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+        }
+
+        #clock {
+            width: 250px;
+            height: 250px;
+            border-radius: 1rem;
+            background-color: #424242;
+        }
+
+        #clockinner {
+            width: 230px;
+            height: 230px;
+            border-radius: 1rem;
+            background-color: #242424;
+        }
+
+        #circle {
+            width: 200px;
+            height: 200px;
+            border: 2px dotted white;
+            border-radius: 50%;
+        }
+
+        #date {
+            font-size: 15px;
+            margin: auto;
+        }
+
+        #time {
+            font-size: 36px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <!-- Content here -->
+        <div id="clock" class="d-flex justify-content-center align-items-center">
+            <div id="clockinner" class="d-flex justify-content-center align-items-center">
+                <div id="circle" class="d-flex justify-content-center align-items-center">
+                    <div id="dateandtime" class="text-light">
+                        <p id="date" class="text-uppercase text-center"></p>
+                        <p id="time" class="fw-bold"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/watch-2.js"></script>
+</body>
+
+</html>
