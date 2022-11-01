@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link rel="stylesheet" href="/watch3v2.css" />
+  </head>
 
-  <link rel="stylesheet" href="/watch3v2.css" />
-</head>
-
-<body>
-  <div class="overallarea">
-    <div class="container">
-      <div class="card">
-        <h2 class="bankname" id="cbname">Bank Name</h2>
-        <h2 class="logo">Logo Here</h2>
-        <img src="https://img.icons8.com/fluency/344/sim-card-chip.png" alt="" class="cardchip" />
-        <div class="arrow"></div>
-        <div class="cardno" id="ccnumber">0123 2345 5678 9000</div>
-        <p class="cardvalid">
-          <span class="valdate">
-            Valid
-            <br />
-            Date
-          </span>
-          <span class="expiredate" id="cmmyy">12/25</span>
-        </p>
-        <div class="ownername" id="cownername">Owner Name</div>
-        <div class="logo1"></div>
-        <div class="logo2"></div>
+  <body>
+    <div class="overallarea">
+      <div class="container">
+        <div class="card">
+          <h2 class="bankname" id="cbname">Bank Name</h2>
+          <h2 class="logo">Logo Here</h2>
+          <img
+            src="https://img.icons8.com/fluency/344/sim-card-chip.png"
+            alt=""
+            class="cardchip"
+          />
+          <div class="arrow"></div>
+          <div class="cardno" id="ccnumber">0123 2345 5678 9000</div>
+          <p class="cardvalid">
+            <span class="valdate">
+              Valid
+              <br />
+              Date
+            </span>
+            <span class="expiredate" id="cmmyy">12/25</span>
+          </p>
+          <div class="ownername" id="cownername">Owner Name</div>
+          <div class="logo1"></div>
+          <div class="logo2"></div>
+        </div>
+        <div class="card">
+          <div class="blackbar"></div>
+          <div class="whitebar" id="ccvc">555</div>
+          <div class="sticker">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+          </div>
+          <div class="cardterm">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellendus sit repellat nesciunt libero tempora voluptatem, est
+              quidem, quis nulla ducimus at architecto consequatur illo laborum.
+              Quod distinctio et mollitia voluptates perferendis eligendi
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+              est saepe ab distinctio, sit.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="blackbar"></div>
-        <div class="whitebar" id="ccvc">53dddddd5</div>
-        <div class="sticker">
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-          <hr />
+      <div class="form-container">
+        <div class="input-wrap">
+          <label for="">Owner Name</label>
+          <input type="text" name="" id="ownername" oninput="ow()" />
         </div>
-        <div class="cardterm">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus sit repellat nesciunt libero tempora voluptatem, est
-            quidem, quis nulla ducimus at architecto consequatur illo laborum.
-            Quod distinctio et mollitia voluptates perferendis eligendi
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
-            est saepe ab distinctio, sit.
-          </p>
+        <div class="input-wrap">
+          <label for="">Bank Name</label>
+          <input type="text" name="" id="bname" oninput="bn()" />
         </div>
+        <div class="input-wrap">
+          <label for="">Card Number</label>
+          <input
+            type="text"
+            name=""
+            id="cnumber"
+            maxlength="16"
+            oninput="cn()"
+          />
+        </div>
+        <div class="input-wrap-half">
+          <label for="">MM / YY</label>
+          <input type="text" name="" id="mmyy" maxlength="4" oninput="mm()" />
+        </div>
+        <div class="input-wrap-half">
+          <label>CVC Code</label>
+          <input type="text" name="" id="cvc" maxlength="3" oninput="cvc()" />
+        </div>
+        <button>Pay now</button>
       </div>
     </div>
-    <div class="form-container">
-      <div class="input-wrap">
-        <label for="">Owner Name</label>
-        <input type="text" name="" id="ownername" oninput="ow()">
-      </div>
-      <div class="input-wrap">
-        <label for="">Bank Name</label>
-        <input type="text" name="" id="bname" oninput="bn()">
-      </div>
-      <div class="input-wrap">
-        <label for="">Card Number</label>
-        <input type="text" name="" id="cnumber" maxlength="16" oninput="cn()">
-      </div>
-      <div class="input-wrap-half">
-        <label for="">MM / YY</label>
-        <input type="text" name="" id="mmyy" maxlength="4" oninput="mm()">
-      </div>
-      <div class="input-wrap-half">
-        <label>CVC Code</label>
-        <input type="text" name="" id="cvc" maxlength="3" oninput="cvc()">
-      </div>
-      <button>Pay now</button>
-    </div>
-  </div>
-  <script src="/watch3v2.js"></script>
-</body>
-
+    <script src="/watch3v2.js"></script>
+  </body>
 </html>
